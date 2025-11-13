@@ -1,0 +1,2 @@
+python-dotenv
+azure-cognitiveservices-vision-customvision
