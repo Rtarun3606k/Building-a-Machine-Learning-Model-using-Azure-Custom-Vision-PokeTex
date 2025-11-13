@@ -2,7 +2,7 @@
 
 As with any project, a few tools are going to be needed. In particular you'll need a code editor, an Azure subscription, and a couple of keys for Custom Vision.
 
-Pocketex is a device/app that identifies which Pokémon appears in an image. This project uses Azure Custom Vision, Python, and a Pokémon dataset from Kaggle.
+PokeTex is a device/app that identifies which Pokémon appears in an image. This project uses Azure Custom Vision, Python, and a Pokémon dataset from Kaggle.
 
 ## Installing the editor
 
@@ -12,7 +12,7 @@ Visual Studio Code is an open source code editor which can be used to create nea
 
 A starter project has been provided which includes the images for the workshop and the solution code. To obtain the project:
 
-1. Navigate to [https://github.com/microsoft/workshop-library/](https://github.com/microsoft/workshop-library/)
+1. Navigate to [https://github.com/Rtarun3606k/Building-a-Machine-Learning-Model-using-Azure-Custom-Vision-PokeTex](https://github.com/Rtarun3606k/Building-a-Machine-Learning-Model-using-Azure-Custom-Vision-PokeTex)
 1. Select **Use this template** to create a copy of the repository in your GitHub account
 1. Name the new repository **workshop-library**
 1. Select **Create repository from template**
@@ -25,13 +25,13 @@ A starter project has been provided which includes the images for the workshop a
 
    ```bash
    # Windows
-   git clone <URL>
-   cd workshop-library\full\ml-model-custom-vision
+   git clone https://github.com/Rtarun3606k/Building-a-Machine-Learning-Model-using-Azure-Custom-Vision-PokeTex
+   cd Building-a-Machine-Learning-Model-using-Azure-Custom-Vision-PokeTex
    code .
 
    # Linux, WSL or macOS
-   git clone <URL>
-   cd workshop-library\full\ml-model-custom-vision
+   git clone https://github.com/Rtarun3606k/Building-a-Machine-Learning-Model-using-Azure-Custom-Vision-PokeTex
+   cd Building-a-Machine-Learning-Model-using-Azure-Custom-Vision-PokeTex
    code .
    ```
 
@@ -66,7 +66,7 @@ We'll create these keys by using the Azure portal.
 
 ## Summary
 
-You now have all the necessary tools for creating and using a Custom Vision model for Pocketex. The next step is to [train the model](./train.md).
+You now have all the necessary tools for creating and using a Custom Vision model for PokeTex. The next step is to [train the model](./train.md).
 
 # Part 1: Train your model
 
@@ -78,7 +78,7 @@ A project is a Custom Vision model. It's used to label images with the appropria
 
 1. Navigate to [Custom Vision](https://www.customvision.ai?wt.mc_id=studentamb_344953) and sign in
 1. Select **New Project**
-1. Enter **Pocketex - Pokémon Classifier** for the project name
+1. Enter **PokeTex - Pokémon Classifier** for the project name
 1. Next to Resource, select the key you created earlier, which will use the name you created during the [setup](setup.md).
 1. For **Project Types** select **Classification**
 1. For **Classification Types** select **Multiclass**, as each image will contain a single Pokémon species
@@ -129,7 +129,7 @@ Let's see how well our model works. It's important to use images which weren't u
 The goal of creating a model in Custom Vision is to use it in different applications. To access it from outside of the Custom Vision website it needs to be published.
 
 1. In the 'Performance' tab, select **Publish**
-1. For **Model name** enter **pocketex**
+1. For **Model name** enter **PokeTex**
 1. For **Prediction resource** select the prediction key you created earlier.
 1. Select **Publish**
 1. Select **Prediction URL** to view the endpoint address
@@ -296,7 +296,7 @@ With the program created, let's run it and see what happens!
 
 ## Summary
 
-Congratulations! You have successfully created and called a Custom Vision model for Pocketex. The model you created can be used to classify which Pokémon appears in an image. You can also create models to detect certain objects in an image. If you want to continue to grow your skills:
+Congratulations! You have successfully created and called a Custom Vision model for PokeTex. The model you created can be used to classify which Pokémon appears in an image. You can also create models to detect certain objects in an image. If you want to continue to grow your skills:
 
 - [Object detection with Custom Vision](https://docs.microsoft.com/learn/modules/detect-objects-images-custom-vision?wt.mc_id=studentamb_344953)
 - [Creating custom models with TensorFlow](https://docs.microsoft.com/learn/paths/tensorflow-fundamentals?wt.mc_id=studentamb_344953)
